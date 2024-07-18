@@ -3,7 +3,7 @@ import streamlit as st # type: ignore
 import plotly.express as px # type: ignore
 import altair as alt # type: ignore
 
-df_cars = pd.read_csv(r'https://github.com/DC89/sprint4pjkt/blob/main/vehicles_us.csv')
+df_cars = pd.read_csv('https://github.com/DC89/sprint4pjkt/blob/main/vehicles_us.csv')
 
 df_cars['model_year'] = df_cars['model_year'].fillna(0) #subs NaN values for zero so we can chart them
 
