@@ -2,7 +2,6 @@ import pandas as pd # type: ignore
 import streamlit as st # type: ignore
 import plotly.express as px # type: ignore
 import altair as alt # type: ignore
-from matplotlib import pyplot as plt # type: ignore
 
 df_cars = pd.read_csv(r'c:\users\relki\documents\github\sprint4pjkt\vehicles_us.csv')
 
