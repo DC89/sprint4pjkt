@@ -4,7 +4,7 @@ import plotly.express as px # type: ignore
 import altair as alt # type: ignore
 from matplotlib import pyplot as plt # type: ignore
 
-df_cars = pd.read_csv(r'c:\users\relki\documents\github\sprint4pjkt\vehicles_us.csv')
+df_cars = pd.read_csv(r'https://github.com/DC89/sprint4pjkt/blob/main/vehicles_us.csv')
 
 df_cars['model_year'] = df_cars['model_year'].fillna(0) #subs NaN values for zero so we can chart them
 
