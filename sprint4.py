@@ -14,7 +14,8 @@ fig3 = px.scatter(x=df_carsNew['model_year'], y=df_carsNew['days_listed'])
 df_carsClassic = df_cars.drop(df_cars[(df_cars['model_year'] > 1999.0) | (df_cars['model_year'] == 0)].index) #looks for cars older than 1999 excluding values of zero
 fig4 = px.histogram(df_carsClassic, x='model_year')
 fig5 = px.scatter(x=df_carsClassic['model_year'], y=df_carsClassic['days_listed'])
-st.header('Classic cars vs. New Cars', divider='red')
+
+st.header('Classic cars vs. New Cars')
 
 
 check0 = st.checkbox('Classics instead of New', key='daysListed') #checkbox to swap between classic cars and new cars scatterplots
